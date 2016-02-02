@@ -24,10 +24,10 @@ Skytimer Notes:
       Would you like to Save your Game? (y/n)
         Display Saved Games List
         a. Type name of Saved Game to Save Under, or Enter NEw Name (You may only have 5 savegames)
-          current_save_name = raw_input("Type name of...")
+          save_name = raw_input("Type name of...")
           for i in savedgamenames:
-            if current_save_name == i:
-              print "saved Game as %s" % (current_save_name)
-              !!Save the GameState in current_save_name.dat
-            elif current_save_name != 
+            if save_name == i:
+              print "saved Game as %s" % (save_name)
+              !!Save the GameState in save_name.dat
+            elif save_name != 
             
