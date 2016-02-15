@@ -1,0 +1,19 @@
+##testing git functions in Linux
+
+1. Installing Git using Linux-Mint
+
+	a. sudo apt-get install git
+	b. git config
+	c. git global user.email "user@email.com"
+	d. git global user.name "skytimer"
+	e. create a directory that will serve as a git repository
+		1. >mkdir repository
+		2. >cd repository
+		3. >git init
+
+2. linking git with github directory
+	a. to connect github to local git:
+	b. take url from github
+	c. git remote add origin [https://github.com/skytimer/underthemapletree.git]
+	d.
+	
