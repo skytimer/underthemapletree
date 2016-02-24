@@ -50,8 +50,8 @@ def intro_story():
 		print ""
 		print rules_b
 		print ""
-		cont_a = raw_input("Press [Y] to continue.: ").lower()
-		while cont_a:
+		while True:
+			cont_a = raw_input("Press [Y] to continue.: ").lower()
 			if cont_a == 'y':
 				print ""
 				print rules_c
@@ -62,40 +62,39 @@ def intro_story():
 			else:
 				print "Syntax Error! You MUST press [Y] to continue!"
 				print ""
-				begin = raw_input("Press [Y] to begin!: ").lower()
 				continue
-		cont_b = raw_input("Press [Y] to continue.: ").lower()
-		while cont_b:
+
+		while True:
+			cont_b = raw_input("Press [Y] to continue.: ").lower()
 			if cont_b == 'y':
 				print intro_a
 				print ""
 				print intro_b
-				inp = raw_input("Press [Y] to continue.: ").lower()
-				while inp:
-					if inp == 'y':
-						print ""
-						print intro_c
-						print ""
-						break
-					else:
-						print ""
-						print "Syntax Error! You MUST press [Y] to continue!"
-						print ""
-						continue
+				break
 			else:
 				print ""
 				print "Syntax Error! You MUST press [Y] to continue!"
 				print ""
-				cont_b = raw_input("Press [Y] to continue.: ").lower()
+				continue
+		while True:
+			cont_c = raw_input("Press [Y] to continue.: ").lower()
+			if cont_c == 'y':
+				print ""
+				print intro_c
+				print ""
+				break
+			else:
+				print ""
+				print "Syntax Error! You MUST press [Y] to continue!"
 				print ""
 				continue
+
 	elif manual == 'y':
-		while True:
 			print intro_a
 			print ""
 			print intro_b
-			inp = raw_input("Press [Y] to continue.: ").lower()
-			while inp:
+			while True:
+				inp = raw_input("Press [Y] to continue.: ").lower()
 				if inp == 'y':
 					print ""
 					print intro_c
@@ -106,7 +105,7 @@ def intro_story():
 					print "Syntax Error! You MUST press [Y] to continue!"
 					print ""
 					continue
-			break		
+
 			
 def create_character():
 	print intro

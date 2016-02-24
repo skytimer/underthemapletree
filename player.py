@@ -47,10 +47,13 @@ class Enemy(object):
 			elif boss.health != 400:
 				boss.health = 400
 				break
-				
+
+
+""" ENEMY TYPES: """
 goblin = Enemy('goblin', 50, 50)
 skeleton = Enemy('skeleton', 75, 60)
 troll = Enemy('troll', 100, 70)
 undead = Enemy('undead', 150, 80)
 ogre = Enemy('forest ogre', 200, 90)
 boss = Enemy('giant forest ogre', 400, 100)
+""""""""""""""""""""""""""""""""""""""""""""""""""
